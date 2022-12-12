@@ -1,9 +1,5 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
@@ -13,11 +9,9 @@
 */
 int main(void)
 {
-	for (int x = "A"; x <= "Z"; x++)
+	for (char x = 'a'; x <= 'z'; x++)
 	{
-		int lower_x = tolower(x);
-
-		putChar(lower_x);
+		putChar(x);
 	}
 
 	return (0);
