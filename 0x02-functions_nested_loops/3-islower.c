@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * int _islower(int c) - Prints the alphabet followed by a new line.
+ * int _islower(int c) - Checks if a character is lower case.
+ * @c: The character to be checked.
  *
  * Return: Always 0.
 */
