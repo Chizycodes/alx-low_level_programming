@@ -3,7 +3,7 @@
 /**
  * main - prints the numbers from 1 to 100, Fizz, Buzz, or FizzBuzz.
  *
- * Return: 0.
+ * Return: Always 0.
  */
 
 int main(void)
@@ -12,12 +12,15 @@ int main(void)
 
 	for (num = 1; num <= 100; num++)
 	{
-		if (num % 3 == 0)
+		if ((num % 3) == 0)
 			printf("Fizz");
-		else if (num % 5 == 0)
+
+		else if ((num % 5) == 0)
 			printf("Buzz");
-		else if ((num % 3 == 0) && (num % 5 == 0))
+
+		else if ((num % 3) == 0 && (num % 5) == 0)
 			printf("FizzBuzz");
+
 		else
 			printf("%d", num);
 
@@ -26,7 +29,8 @@ int main(void)
 
 		printf(" ");
 	}
-	_putchar('\n');
+
+	printf("\n");
 
 	return (0);
 }
