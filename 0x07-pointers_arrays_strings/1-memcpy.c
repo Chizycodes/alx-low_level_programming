@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _memcpy - copies n bytes from the memory
@@ -11,11 +10,11 @@
  * Return: A pointer to desc.
  */
 
-void *_memcpy(void *dest, void *src, unsigned int n)
+void *_memcpy(void *dest, const void *src, unsigned int n)
 {
 	unsigned int index;
 	unsigned char *des = dest;
-	unsigned char *source = src;
+	const unsigned char *source = src;
 
 	for (index = 0; index < n; index++)
 		des[index] = source[index];
