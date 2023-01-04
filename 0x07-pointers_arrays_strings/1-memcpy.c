@@ -19,5 +19,5 @@ void *_memcpy(void *dest, void *src, unsigned int n)
 	for (index = 0; index < n; index++)
 		destination[index] = source[index];
 
-	return (dest);
+	return (destination);
 }
