@@ -10,14 +10,14 @@
  * Return: A pointer to desc.
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+void *_memcpy(void *dest, void *src, unsigned int n)
 {
 	unsigned int index;
-	unsigned char *destination = dest;
+	unsigned char *des = dest;
 	unsigned char *source = src;
 
 	for (index = 0; index < n; index++)
-		destination[index] = source[index];
+		des[index] = source[index];
 
-	return (destination);
+	return (dest);
 }
