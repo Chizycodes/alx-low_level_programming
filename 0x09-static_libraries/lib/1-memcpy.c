@@ -10,11 +10,11 @@
  * Return: A pointer to desc.
  */
 
-void *_memcpy(void *dest, char *src, unsigned int n)
+void *_memcpy(void *dest, void *src, unsigned int n)
 {
 	unsigned int index;
 	unsigned char *des = dest;
-	char *source = src;
+	unsigned char *source = src;
 
 	for (index = 0; index < n; index++)
 		des[index] = source[index];
