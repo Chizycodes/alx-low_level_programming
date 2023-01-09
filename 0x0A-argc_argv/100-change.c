@@ -20,45 +20,36 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	cents = atoi(argv(1));
+	cents = atoi(argv[1]);
 
-	if (cents < 0)
-		printf("%d\n", change);
-	
-	else
-
+	while (cents > 0)
+	{
+		change++;
 		if (cents >= 25)
 		{
-			change += cents / 25;
-			cents = cents % 25;
+			cents -= 25;
+			continue;
 		}
-
 		if (cents >= 10)
 		{
-			change += cents / 10;
-			cents = cents % 10;
+			cents -= 10;
+			continue;
 		}
-
 		if (cents >= 5)
 		{
-			change += cents / 5;
-			cents = cents % 5;
+			cents -= 5;
+			continue;
 
 		}
-
 		if (cents >= 2)
 		{
-			change += cents / 2;
-			cents = cents % 2;
+			cents -= 2;
+			continue;
 		}
+		cents--;
+	}
 
-		if (cents == 1)
-		{
-			change += 1;
-			cents = 0;
-		}
-
-		printf("%d", change);
+	printf("%d\n", change);
 
 	return (0);
 }
