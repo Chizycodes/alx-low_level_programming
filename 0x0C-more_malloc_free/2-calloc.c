@@ -23,5 +23,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mem == NULL)
 		return (NULL);
 
+	fill = mem;
+
+	for (index = 0; index < (size * nmemb); index++)
+		fill[index] = '\0';
+
 	return (mem);
 }
