@@ -1,6 +1,11 @@
 #ifndef CALC_H
 #define CALC_H
 
+/*
+ * File: 3-calc.h
+ * Description: Header file.
+ */
+
 /**
  * struct op - A struct op.
  * @op: operator.
