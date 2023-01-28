@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <string.h>
+#include <stdlib.h>
 
 /**
  * free_list - free a list_t list.
